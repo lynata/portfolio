@@ -1,0 +1,350 @@
+// Mobile
+// .Nav {
+//     background-color: #DCD0FF;
+//     color: white;
+//     height: 60px;
+//     width: 100%;
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+    
+    
+//     // display: grid;
+//     // grid-template-rows: 1fr 1fr 1fr;
+//     // grid-template-areas: ". accueil menu"; 
+//     // align-items: center;
+//     // justify-items: center;
+//     // justify-self: center;
+//     // justify-content: space-between;
+
+//     #accueil {
+//         // grid-area: accueil;
+//         // justify-self: center;
+//         // align-self: flex-end;
+//         align-self: center;
+
+//         #imgRose {
+//             width: 3em;
+//         }
+//     }
+
+//     .navDerou {
+//         // grid-area: menu;
+//         // justify-self: end;
+//         margin-left: auto;
+//         ul {
+//             text-decoration: none;
+//             list-style: none;
+
+//             a{
+//                 text-decoration: none;
+//             }
+//         }
+        
+//     }
+// }
+
+
+// IT ALMOST WORKED
+// *{
+//     padding: 0;
+//     margin: 0;
+// }
+
+// .Nav {
+//     background-color: #DCD0FF;
+//     color: white;
+//     height: 60px;
+//     width: 100%;
+//     margin: 0;
+//     padding: 0;
+//     // display: flex;
+//     // align-items: center;
+//     // justify-content: space-around;
+
+//     #menuIcon {
+//         position: absolute;
+//         right: 2vw;
+//         top: 2vw;
+//         cursor: pointer;
+//         // display: flex;
+//         // justify-content: flex-end;
+//         // align-items: center;
+//         // height: 3em;
+//         // border: 1px solid red;
+//     }
+
+//     #chk {
+//         // display: none;
+//     }
+
+//     #chk:checked ~ .burger{
+//         display: none;
+//     }
+    
+//     ul {
+//         margin: 0;
+//         padding: 0;
+//         text-decoration: none;
+//         list-style: none;
+//         height: 100vh;
+//         // background-color: #DCD0FF;
+//         // display: flex;
+//         // align-items: center;
+//         // margin: 0 5px;
+//         left: -100%;
+//             transition: all .5s;
+            
+//         #imgRose {
+//             width: 3em;
+//         }
+
+//         li {
+//             // text-decoration: none;
+//             // margin: 0 8px;
+//             display: flex;
+//             justify-content: center;
+//         }
+
+//         li:not(:first-child) {
+//             margin-left: 0;
+//             // display: flex;
+//             // justify-content: center;
+//             // align-self: center;
+//             border: 1px solid white;
+//             background-color: #ffbdbd;
+//             height: 60px;
+//             display: flex;
+//             align-items: center;
+//             // align-content: flex-end;
+            
+
+//         }
+
+//         a {
+//             text-decoration: none;
+//             color: white;
+//         }
+
+//         a:hover{
+//             color: #DCD0FF;
+//         }
+//     }
+// }
+
+// .Nav {
+//     background-color: #DCD0FF;
+//     color: white;
+//     height: 60px;
+//     width: 100%;
+//     margin: 0;
+//     padding: 0;
+//     position: sticky;
+//     display: flex;
+//     // justify-content: center;
+
+//     #accueil {
+//         // display: flex;
+//         // justify-content: center;
+    
+//         #imgRose {
+//             width: 3em;
+//         }
+//     }
+
+//     #navDerou{
+//         // display: flex;
+//         // justify-content: flex-end;
+//         // position: absolute;
+//         // align-content: flex-end;
+//         // align-self: flex-end;
+//         // align-content: flex-end;
+//         // margin-bottom: auto;
+//         // margin-left: auto;
+//         border: 1px solid red;
+//         ul {
+//             text-decoration: none;
+//             list-style: none;
+
+//             a{
+//                 text-decoration: none;
+//             }
+//         }
+//     }
+// }
+
+.Nav {
+    background-color: #cdbdff;
+    color: white;
+    height: 9vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // border: 1px solid red;
+        // position: absolute;
+        // background-color: #DCD0FF;
+
+        .rose {
+            width: 5vw;
+            margin:  2vw;
+        }
+    }
+    .menuPetit {
+        
+        // border: 1px solid red;
+        // display: flex;
+        // justify-content: center;
+        margin-top: -8.5vw;
+        // border: 1px solid red;
+    
+        .MuiSvgIcon-root{
+            // border: 1px solid green;
+            margin-top: 1.5vw;
+            width: 5vw;
+            height: auto;
+        }
+    
+        ul {
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-content: flex-start;
+            margin: 0;
+            padding: 3vw 0;
+            height: 100vh;
+            background-color: black;
+    
+            #imgRose {
+                width: 3em;
+            }
+
+            li {
+                margin: 2vw;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+                a:hover{
+                    color: #ffb3b3;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// Tablette 
+@media (min-width: 800px) {
+    // .Nav {
+    //     display: flex;
+    //     justify-content: center;
+    //     #menuIcon{
+    //         display: none;
+    //     }
+
+    //     ul {
+    //         display: flex;
+    //         align-items: center;
+            
+
+    //         li {
+    //             margin: 0 10px;
+    //         }
+
+    //         li:not(:first-child) {
+    //             background-color: transparent;
+    //             border: none;
+    //         }
+    //     }
+    // }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .Nav {
+        padding: 0;
+        margin: 0;
+        height: 6vw;
+
+        .logo {
+            display: none;
+        }
+
+        .menuLarge {
+            // border: 1px solid red;
+            // display: flex;
+            // justify-content: center;
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                list-style: none;
+
+                #imgRose {
+                    width: 5vw;
+                }
+
+                li {
+                    margin: 0 2vw;
+
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// Grabd Ecran 
+@media (min-width: 1200px) {
+    // .Nav {
+    //     // display: flex;
+    //     // align-items: center;
+    //     // justify-content: space-between;
+    //     height: 60px;
+    //     font-size: 1.1em;
+
+    //     .accueil {
+    //         align-self: flex-start;
+    //         margin: 3px 20px;
+    //         // border: 1px solid red;
+    //     }
+
+    //     .navDerou {
+    //         // display: flex;
+    //         align-items: center;
+        
+    //         li {
+    //            display: inline-block;
+    //            margin: 0 5px;
+
+    //            a {
+    //                color: white;
+    //                text-decoration: none;
+    //            }
+    //         }
+            
+    //     }
+    // }
+}
