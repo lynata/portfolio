@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@ html, body {
     }
     font-size: 18px;
     background-color: #FEE8E8;
+    font-family: Roboto;
 
     .cache {
         display: none;

@@ -176,12 +176,14 @@
 // }
 
 .Nav {
-    background-color: #cdbdff;
+    background-color: #daceff;
     color: white;
     height: 9vw;
     width: 100%;
     margin: 0;
     padding: 0;
+    position: fixed;
+    top: 0;
 
     .logo {
         display: flex;
@@ -280,7 +282,8 @@
     .Nav {
         padding: 0;
         margin: 0;
-        height: 6vw;
+        height: 5.5vw;
+        position: fixed;
 
         .logo {
             display: none;
@@ -308,6 +311,10 @@
                     a{
                         text-decoration: none;
                         color: white;
+                    }
+
+                    a:hover, a:active{
+                        color: #ffb3b3;
                     }
                 }
             }
