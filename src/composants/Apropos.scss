@@ -38,6 +38,9 @@
             li {
                 margin: 2vw 0;
                 font-size: 3.5vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             li:nth-child(odd){
@@ -50,7 +53,7 @@
             }
 
             // li:hover {
-            //     font-size: 3.6vw;
+            //     height: 5vw;
             // }
         }
     }

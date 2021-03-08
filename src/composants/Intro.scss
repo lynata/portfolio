@@ -39,6 +39,9 @@
                 margin: 2vw 0;
                 font-size: 3vw;
                 font-family: Montserrat;
+                animation-duration: 2s;
+                animation-name: bounceIn;
+                animation-timing-function: ease-in-out;
 
                 .fleur {
                     width: 2.5vw;
@@ -54,11 +57,37 @@
                     // border: 1px solid red;
                 }
             }
+
+            @keyframes bounceIn {
+                0% {
+                  transform: scale(0.1);
+                  opacity: 0;
+                }
+                60% {
+                  transform: scale(1.2);
+                  opacity: 1;
+                }
+                100% {
+                  transform: scale(1);
+                }
+            }
+
+            @keyframes opaAni {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
         }
     }
 
     .deco {
         z-index: -1000;
+        animation-name: opaAni;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
         .decoG{
             position: absolute;
             width: 25vw;
@@ -71,6 +100,7 @@
             width: 25vw;
             right: 0;
             margin-top: -45vw;
+            
         }
     }
 }
@@ -100,6 +130,8 @@
                     font-size: 2vw;
                     // border: 1px solid red;
                     margin: 1.5vw;
+                    animation-duration: 2s;
+                    animation-name: bounceIn;
                 }
             }
         }
@@ -141,6 +173,9 @@
                 li {
                     margin: 2vh;
                     font-size: 2vw;
+                    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+                    animation-duration: 2s; /* don't forget to set a duration! */
+                    // animation: 3s ease-in 1s infinite reverse both running slidein;
                 }
             }
         }
