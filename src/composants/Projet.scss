@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 .Projet {
     margin-top: 3vw;
-    border: 1.5px solid rgba(255, 179, 179, 1);
+    // border: 1.5px solid rgba(255, 179, 179, 1);
     padding: 1.3vw;
+    width: 62.7vw;
     background-color: #daceff;
     box-shadow: 1px 1px 5px 2px rgba($color: #bbb2d6, $alpha: 0.5);
 
     img {
         width: 60vw;
         height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .titrePrj {
@@ -15,9 +20,12 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2vw;
+        font-family: Montserrat;
 
         p{
             font-size: 2vw;
+            flex-wrap: wrap;
+            font-family: Roboto;
             // flex-wrap: wrap;
         }
     }
@@ -34,6 +42,12 @@
         p{
             font-weight: normal;
         }
+    }
+
+    .outils {
+        margin-top: 3vw;
+        font-family: Montserrat;
+        font-weight: 400;
     }
 }
 

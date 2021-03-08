@@ -12,6 +12,10 @@ export default function Projet(props) {
             <div className="descPrj">
                 Description :
                 <p>{props.desc}</p>
+                <p>{props.autre}</p>
+            </div>
+            <div className="outils">
+                {props.outils}
             </div>
         </div>
     )

@@ -12,7 +12,7 @@ export default function ListeProjets() {
             </div>
             <div className="contProj">
                 <ul>
-                    {projets.map((prj) => <li><Projet titre={prj.titre} img={prj.img} role={prj.role} desc={prj.desc} lien={prj.lien}/></li>)}
+                    {projets.map((prj) => <li><Projet titre={prj.titre} img={prj.img} role={prj.role} desc={prj.desc} lien={prj.lien} autre={prj.autre} outils={prj.outils}/></li>)}
                 </ul>
             </div>
         </section>
