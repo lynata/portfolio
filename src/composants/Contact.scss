@@ -1,0 +1,106 @@
+//Mobile
+.Contact{
+    // margin: 5vw;
+    .titre {
+        margin: 5vw;
+        display: flex;
+        align-items: center;
+        #section {
+            width: 6vw;
+            margin-right: 2vw;
+        }
+    }
+    .feuilles{
+        margin: 0;
+        padding: 0;
+        // border: 5px solid red;
+        // height: 30vh;
+        // display: flex;
+        // height: 40vh;
+
+        img{
+            width: 40vw;
+            // position: absolute;
+        }
+        .g{
+            left: 0;
+            bottom: auto;
+            position: absolute;
+            // border: 1px solid red;
+
+            
+        }
+        .d{
+            right: 0;
+            bottom: auto;
+            position: absolute;
+            // width: 35vw;
+            margin-top: 13vw;
+        }
+    }
+
+    .icones {
+        margin: 0;
+        padding: 0;
+        // border: 5px solid red;
+        // height: 30vh;
+        // display: flex;
+        // height: 40vh;
+
+        img{
+            width: 5vw;
+            // position: absolute;
+        }
+        .ig{
+            left: 30vw;
+            bottom: auto;
+            position: absolute;
+            // border: 1px solid red;
+
+            
+        }
+        .id{
+            right: 29vw;
+            bottom: auto;
+            position: absolute;
+            // width: 35vw;
+            margin-top: 13vw;
+        }
+    }
+    
+
+    .merci {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 19.5vw;
+        // margin-bottom: 0;
+
+        img {
+            width: 20vw;
+        }
+    }
+}
+
+// Tablette 
+@media (min-width: 800px) {
+    .Contact {
+        .titre {
+            h3{
+                font-size: 3vw;
+            }
+        }
+    }
+}
+
+// Grand Ecran 
+@media (min-width: 1200px) {
+    .Contact {
+        height: 100vh;
+        .titre {
+            h3{
+                font-size: 2.5vw;
+            }
+        }
+    }
+}
