@@ -70,8 +70,8 @@ import './Nav.scss';
                         <ul>
                             <li><a href="#Intro"><img id="imgRose" src={imgAcc} alt="Accueil"/></a></li>
                             <li><a href="#Projets">Projets</a></li>
-                            <li><a href="#">À Propos</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#Apropos">À Propos</a></li>
+                            <li><a href="#Contact">Contact</a></li>
                         </ul>
                     }
                 />

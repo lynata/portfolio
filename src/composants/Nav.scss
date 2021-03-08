@@ -184,6 +184,8 @@
     padding: 0;
     position: fixed;
     top: 0;
+    // overflow: hidden;
+    z-index: 10;
 
     .logo {
         display: flex;
@@ -224,6 +226,7 @@
             padding: 3vw 0;
             height: 100vh;
             background-color: black;
+            z-index: 10000;
     
             #imgRose {
                 width: 3em;
@@ -241,6 +244,10 @@
                     color: #ffb3b3;
                 }
             }
+
+            // li:not(:first-child){
+            //     border-left: 1px solid white;
+            // }
         }
     }
 }

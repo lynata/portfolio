@@ -4,7 +4,7 @@ import point from '../images/point.png';
 
 export default function Apropos() {
     return (
-        <section className="Apropos">
+        <section className="Apropos" id="Apropos">
             <div className="titre">
                 <img id="section" src={section} alt="rose"/>
                 <h3>À Propos</h3>

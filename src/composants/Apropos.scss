@@ -39,6 +39,19 @@
                 margin: 2vw 0;
                 font-size: 3.5vw;
             }
+
+            li:nth-child(odd){
+                background-color: rgba(218, 206, 255, 0.7);
+                
+            }
+
+            li:nth-child(even){
+                background-color: rgba(255, 179, 179, 0.7);
+            }
+
+            // li:hover {
+            //     font-size: 3.6vw;
+            // }
         }
     }
 }
@@ -62,7 +75,6 @@
                 column-gap: 2vw;
                 row-gap: 0;
                 justify-content: center;
-                align-items: start;
 
                 li {
                     // border: 1px solid red;

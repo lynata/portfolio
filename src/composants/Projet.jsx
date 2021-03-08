@@ -8,7 +8,7 @@ export default function Projet(props) {
                 <h3>{props.titre}</h3>
                 <p>Rôle : {props.role}</p>
             </div>
-            <a href={props.lien}>Lien vers le projet</a>
+            <a href={props.lien} target="_blank">Lien vers le projet</a>
             <div className="descPrj">
                 Description :
                 <p>{props.desc}</p>

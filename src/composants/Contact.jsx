@@ -8,7 +8,7 @@ import merci from '../images/merci.png';
 
 export default function Contact() {
     return(
-        <section className="Contact">
+        <section className="Contact" id="Contact">
             <div className="titre">
                 <img id="section" src={section} alt="rose"/>
                 <h3>Contact</h3>

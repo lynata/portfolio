@@ -26,12 +26,14 @@
     .desc {
         display: flex;
         justify-content: center;
+        align-items: center;
 
         ul {    
 
             text-decoration: none;
             list-style: none;
             margin: 2vw;
+            
 
             li {
                 margin: 2vw 0;
@@ -39,7 +41,7 @@
                 font-family: Montserrat;
 
                 .fleur {
-                    width: 3vw;
+                    width: 2.5vw;
                 }
 
                 // .pt2 {
@@ -52,6 +54,23 @@
                     // border: 1px solid red;
                 }
             }
+        }
+    }
+
+    .deco {
+        z-index: -1000;
+        .decoG{
+            position: absolute;
+            width: 25vw;
+            left: 0;
+            margin-top: -45vw;
+        }
+
+        .decoD{
+            position: absolute;
+            width: 25vw;
+            right: 0;
+            margin-top: -45vw;
         }
     }
 }
@@ -84,6 +103,18 @@
                 }
             }
         }
+
+        .deco {
+            // z-index: -1000;
+            .decoG{
+                margin-top: -30vw;
+            }
+    
+            .decoD{
+                // width: 30vw;
+                margin-top: -30vw;
+            }
+        }
     }
 }
 
@@ -108,9 +139,25 @@
         .desc {
             ul {
                 li {
-                    margin: 1.2vh;
+                    margin: 2vh;
                     font-size: 2vw;
                 }
+            }
+        }
+
+        .deco {
+            z-index: 0;
+            border: 1px solid red;
+            .decoG{
+                width: 25vw;
+                margin-top: -30vw;
+                // position: absolute;
+            }
+    
+            .decoD{
+                width: 25vw;
+                margin-top: -30vw;
+                // position: absolute;
             }
         }
     }
