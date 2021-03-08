@@ -2,7 +2,7 @@ import './Projet.scss';
 
 export default function Projet(props) {
     return (
-        <div className="Projet">
+        <div className="Projet" >
             <img src={`imgPrj/${props.img}.png`} alt="image du projet"/>
             <div className="titrePrj" >
                 <h3>{props.titre}</h3>

@@ -1,0 +1,93 @@
+// Mobile
+.Apropos {
+    margin: 5vw;
+    .titre {
+        display: flex;
+        align-items: center;
+        #section {
+            width: 6vw;
+            margin-right: 2vw;
+        }
+    }
+
+    .descPropos {
+        p{
+            margin: 3vw 0;
+        }
+    }
+
+    .liste {
+        margin: 0;
+        padding: 0;
+        .listeTitre {
+            display: flex;
+            align-items: center;
+            img {
+                width: 4vw;
+                margin-right: 1.5vw;
+            }
+            font-weight: bold;
+            font-family: Montserrat;
+        }
+
+        ul {
+            text-decoration: none;
+            list-style: none;
+            margin: 0 5.8vw;
+
+            li {
+                margin: 2vw 0;
+                font-size: 3.5vw;
+            }
+        }
+    }
+}
+
+// Tablette 
+@media (min-width: 800px) {
+    .Apropos {
+        .titre {
+            h3{
+                font-size: 3vh;
+            }
+        }
+        .liste {
+            margin: 0;
+            padding:0;
+            ul {
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                column-gap: 2vw;
+                row-gap: 0;
+                justify-content: center;
+                align-items: start;
+
+                li {
+                    // border: 1px solid red;
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+}
+
+
+// Grand Ecran 
+@media (min-width: 1200px){
+    .Apropos{
+        .titre{
+            h3{
+                font-size: 2.5vw;
+            }
+        }
+        .liste {
+            ul{
+                li{
+                    font-size: 1.8vw;
+                }
+            }
+        }
+    }
+}
