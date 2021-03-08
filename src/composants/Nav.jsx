@@ -68,9 +68,9 @@ import './Nav.scss';
                     smallMenuClassName="menuPetit"
                     menu={
                         <ul>
-                            <li><a href="#"><img id="imgRose" src={imgAcc} alt="Accueil"/></a></li>
-                            <li><a href="#">Projets</a></li>
-                            <li><a href="#">A Propos</a></li>
+                            <li><a href="#Intro"><img id="imgRose" src={imgAcc} alt="Accueil"/></a></li>
+                            <li><a href="#Projets">Projets</a></li>
+                            <li><a href="#">À Propos</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     }

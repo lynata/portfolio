@@ -1,0 +1,56 @@
+.Projet {
+    margin-top: 3vw;
+    border: 1px solid white;
+    padding: 1.3vw;
+    background-color: #daceff;
+    box-shadow: 1px 1px 5px 2px rgba($color: #bbb2d6, $alpha: 0.5);
+
+    img {
+        width: 60vw;
+        height: auto;
+    }
+
+    .titrePrj {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2vw;
+
+        p{
+            font-size: 2vw;
+            // flex-wrap: wrap;
+        }
+    }
+
+    .descPrj {
+        margin-top: 2vw;
+        font-weight: bold;
+        // text-decoration: underline;
+
+        p{
+            font-weight: normal;
+        }
+    }
+}
+
+// Tablette 
+@media (min-width: 800px) {
+    .Projet {
+        .titrePrj {
+            p {
+                font-size: 2vh;
+            }
+        }
+    }
+}
+
+// Grand Ecran 
+@media (min-width: 1200px) {
+    .Projet {
+        .titrePrj {
+            p {
+                font-size: 2.5vh;
+            }
+        }
+    }
+}

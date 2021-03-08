@@ -5,7 +5,7 @@ import point2 from '../images/point2.png';
 
 export default function Intro() {
     return(
-        <section className="Intro">
+        <section className="Intro" id="Intro" >
             <div className="avatar">
                 <h3>Lyna Tang</h3>
                 <img id="imgLyna" src={imgLyna} alt="Lyna"/>

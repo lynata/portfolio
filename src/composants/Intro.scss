@@ -18,7 +18,7 @@
         }
 
         #imgLyna{
-            width: 40vw;
+            width: 35vw;
             border-radius: 50%;
         }
     }
@@ -35,7 +35,8 @@
 
             li {
                 margin: 2vw 0;
-                font-size: 3.5vw;
+                font-size: 3vw;
+                font-family: Montserrat;
 
                 .fleur {
                     width: 3vw;
@@ -48,24 +49,68 @@
 
                 .fleur:nth-child(2){
                     width: 3.2vw;
-                    border: 1px solid red;
+                    // border: 1px solid red;
                 }
             }
         }
     }
 }
 
+//tablette
 @media (min-width: 800px) {
     .Intro {
         .avatar {
-            margin-top: 8vw;
+            margin-top: 7vw;
 
             h3 {
                 font-size: 3vw;
+                padding: 0;
+                margin: 1.5vw;
+                // border: 1px solid red;
             }
 
             #imgLyna {
                 width: 20vw;
+            }
+        }
+
+        .desc {
+            ul {
+                margin: 1.5vw;
+                li{
+                    font-size: 2vw;
+                    // border: 1px solid red;
+                    margin: 1.5vw;
+                }
+            }
+        }
+    }
+}
+
+
+// grand ecran
+@media (min-width: 1200px){
+    .Intro {
+        height: 100vh;
+        // border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .avatar {
+            margin-top: 2vh;
+            #imgLyna {
+                width: 15vw;
+            }
+        }
+
+        .desc {
+            ul {
+                li {
+                    margin: 1.2vh;
+                    font-size: 2vw;
+                }
             }
         }
     }
