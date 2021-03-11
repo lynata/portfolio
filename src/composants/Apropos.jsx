@@ -10,7 +10,7 @@ export default function Apropos() {
                 <h3>À Propos</h3>
             </div>
             <div className="descPropos">
-                <p>Je suis une finissante Montrealaise du programme d'integration multimedia</p>
+                <p>Bonjour! Je suis Lyna Tang, une finissante Montréalaise du programme d'intégration multimédia. <br/>(Je suis en train de bâtir mon portfolio, je m'excuse d'avance pour les erreurs.) <br/> <a href="https://www.behance.net/lyna_tang">Lien vers mon Behance</a>  </p>
             </div>
             <div className="liste">
                 <div className="listeTitre">
@@ -25,7 +25,7 @@ export default function Apropos() {
                     <li>React</li>
                     <li>MySQL</li>
                     <li>Adobe Photoshop</li>
-                    <li>Abode Illustrator</li>
+                    <li>Adobe Illustrator</li>
                     <li>PHP</li>
                     <li>Figma</li>
                     <li>Unity</li>

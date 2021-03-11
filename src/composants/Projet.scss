@@ -6,6 +6,7 @@
     width: 62.7vw;
     background-color: #daceff;
     box-shadow: 1px 1px 5px 2px rgba($color: #bbb2d6, $alpha: 0.5);
+    font-family: Indie Flower;
 
     img {
         width: 60vw;
@@ -20,37 +21,39 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2vw;
-        font-family: Montserrat;
+        font-family: Indie Flower,Montserrat;
 
         p{
             font-size: 2vw;
             flex-wrap: wrap;
-            font-family: Roboto;
+            // font-family: Roboto;
             // flex-wrap: wrap;
         }
     }
 
     a{
-        color: #ff9191
+        color: #fc7676
     }
 
     a:hover{
-        color: #ffb3b3;
+        color: #FF9B9B;
     }
 
     .descPrj {
         margin-top: 2vw;
         font-weight: bold;
         // text-decoration: underline;
+        font-family: Indie Flower, Montserrat;
 
         p{
             font-weight: normal;
+            font-family: Gaegu, Indie Flower;
         }
     }
 
     .outils {
         margin-top: 3vw;
-        font-family: Montserrat;
+        font-family: Indie Flower, Montserrat;
         font-weight: 400;
     }
 }

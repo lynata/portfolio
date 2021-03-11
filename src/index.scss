@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,300&family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -9,7 +13,8 @@ html, body {
     }
     font-size: 18px;
     background-color: #ffdde4;
-    font-family: Roboto, Montserrat;
+    // font-family: Roboto, Montserrat;
+    font-family: Gaegu, Indie Flower, Montserrat, Roboto;
 
     .cache {
         display: none;

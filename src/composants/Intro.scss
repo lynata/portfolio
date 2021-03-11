@@ -15,12 +15,28 @@
         h3 {
             margin-bottom: 2vw;
             font-size: 4.5vw;
+            color: #FF9B9B;
+            // font-family: Montserrat;
         }
 
         #imgLyna{
             width: 35vw;
             border-radius: 50%;
         }
+
+        // #imgLyna:hover{
+        //     display: none;
+        // }
+    }
+
+    .magic {
+        display: none;
+        // img{
+        //     position: absolute;
+        //     margin-top: -45vw;
+        //     margin-left: 25vw;
+        //     width: 50vw;
+        // }
     }
 
     .desc {
@@ -38,7 +54,8 @@
             li {
                 margin: 2vw 0;
                 font-size: 3vw;
-                font-family: Montserrat;
+                // font-family: Montserrat;
+
                 animation-duration: 2s;
                 animation-name: bounceIn;
                 animation-timing-function: ease-in-out;
@@ -165,7 +182,46 @@
             margin-top: 2vh;
             #imgLyna {
                 width: 15vw;
+                z-index: 2;
+                // z-index: 0;
+                // position: absolute;
             }
+
+            // #imgLyna:hover{
+            //     animation-name: magicAnim;
+            //     animation-duration: 3s;
+            //     animation-fill-mode: forwards;
+            //     animation-iteration-count: 1;
+            //     animation-timing-function: ease-in-out;
+            //     // width: 20vw;
+            // }
+
+            // #imgLyna:hover .magic img{
+            //     animation-name: magicAnimOpp;
+            //     animation-duration: 3s;
+            //     animation-fill-mode: forwards;
+            //     animation-iteration-count: 1;
+            //     animation-timing-function: ease-in-out;
+            // }
+
+            @keyframes magicAnim {
+                0%{
+                    transform: translateX(0);
+                }
+                100%{
+                    transform: translateX(-10vw);
+                }
+            }
+
+            @keyframes magicAnimOpp {
+                0%{
+                    transform: translateX(0);
+                }
+                100%{
+                    transform: translateX(10vw);
+                }
+            }
+
         }
 
         .desc {
@@ -179,6 +235,29 @@
                 }
             }
         }
+
+        // .magic {
+        //     display: block;
+        //         img{
+        //             position: absolute;
+        //             margin-top: -21vw;
+        //             margin-left: -12vw;
+        //             width: 25vw;
+        //         }
+        //     }
+        // }
+        // .magic {
+        //     display: block;
+        //     border: 1px solid red;
+        //     // display: none;
+        //     z-index: 1;
+        //     img{
+        //         position: absolute;
+        //         margin-top: -21vw;
+        //         margin-left: -12vw;
+        //         width: 25vw;
+        //     }
+        // }
 
         .deco {
             z-index: 0;
