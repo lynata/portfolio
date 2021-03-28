@@ -13,8 +13,8 @@
         // color: yellow;
         
         h3 {
-            margin-bottom: 2vw;
-            font-size: 4.5vw;
+            margin-bottom: 3vw;
+            font-size: 8vw;
             color: #FF9B9B;
             // font-family: Montserrat;
         }
@@ -22,11 +22,13 @@
         #imgLyna{
             width: 35vw;
             border-radius: 50%;
+            // z-index: 10;
         }
 
-        // #imgLyna:hover{
-        //     display: none;
-        // }
+        #imgIntro{
+            display: none;
+        }
+ 
     }
 
     .magic {
@@ -53,7 +55,7 @@
 
             li {
                 margin: 2vw 0;
-                font-size: 3vw;
+                font-size: 4vw;
                 // font-family: Montserrat;
 
                 animation-duration: 2s;
@@ -119,6 +121,22 @@
             margin-top: -45vw;
             
         }
+        animation-name: oppAnim;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes oppAnim {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
     }
 }
 
@@ -129,7 +147,7 @@
             margin-top: 7vw;
 
             h3 {
-                font-size: 3vw;
+                font-size: 4.5vw;
                 padding: 0;
                 margin: 1.5vw;
                 // border: 1px solid red;
@@ -137,14 +155,56 @@
 
             #imgLyna {
                 width: 20vw;
+                z-index: 2
             }
+
+            #imgLyna:hover{
+                animation-name: transLyna;
+                animation-duration: 3s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+            }
+    
+            #imgLyna:hover ~ #imgIntro{
+                animation-name: transIntro;
+                animation-duration: 3s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+            }
+    
+            #imgIntro {
+                display: block;
+                position: absolute;
+                margin-top: 3vw;
+                width: 19vw;
+                margin-left: 0.3vw;
+            }
+    
+            @keyframes transLyna {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-9vw);
+                }
+            }
+    
+            @keyframes transIntro {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(9vw);
+                }
+            }
+
         }
 
         .desc {
             ul {
                 margin: 1.5vw;
                 li{
-                    font-size: 2vw;
+                    font-size: 3vw;
                     // border: 1px solid red;
                     margin: 1.5vw;
                     animation-duration: 2s;
@@ -179,49 +239,25 @@
         flex-direction: column;
 
         .avatar {
-            margin-top: 2vh;
+            margin-top: 3vh;
             #imgLyna {
                 width: 15vw;
                 z-index: 2;
+                // margin: 2vw;
                 // z-index: 0;
                 // position: absolute;
             }
 
-            // #imgLyna:hover{
-            //     animation-name: magicAnim;
-            //     animation-duration: 3s;
-            //     animation-fill-mode: forwards;
-            //     animation-iteration-count: 1;
-            //     animation-timing-function: ease-in-out;
-            //     // width: 20vw;
-            // }
-
-            // #imgLyna:hover .magic img{
-            //     animation-name: magicAnimOpp;
-            //     animation-duration: 3s;
-            //     animation-fill-mode: forwards;
-            //     animation-iteration-count: 1;
-            //     animation-timing-function: ease-in-out;
-            // }
-
-            @keyframes magicAnim {
-                0%{
-                    transform: translateX(0);
-                }
-                100%{
-                    transform: translateX(-10vw);
-                }
+            #imgIntro{
+                margin-top: 4vw;
+                width: 17vw;
+                margin-right: 1.5vw;
             }
 
-            @keyframes magicAnimOpp {
-                0%{
-                    transform: translateX(0);
-                }
-                100%{
-                    transform: translateX(10vw);
-                }
+            h3{
+                margin-top: 5vw;
+                font: 3.5vw;
             }
-
         }
 
         .desc {

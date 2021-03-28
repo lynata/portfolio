@@ -4,9 +4,9 @@
     // border: 1.5px solid rgba(255, 179, 179, 1);
     padding: 1.3vw;
     width: 62.7vw;
-    background-color: #daceff;
+    background-color: #ccbbff;
     box-shadow: 1px 1px 5px 2px rgba($color: #bbb2d6, $alpha: 0.5);
-    font-family: Indie Flower;
+    // font-family: Indie Flower;
 
     img {
         width: 60vw;
@@ -21,22 +21,17 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2vw;
-        font-family: Indie Flower,Montserrat;
-
-        p{
-            font-size: 2vw;
-            flex-wrap: wrap;
-            // font-family: Roboto;
-            // flex-wrap: wrap;
-        }
+        font-size: 3vw;
+        // color: #ffa7a7;
+        // font-family: Indie Flower,Montserrat;
     }
 
     a{
-        color: #fc7676
+        color: white;
     }
 
     a:hover{
-        color: #FF9B9B;
+        color: #ffbdbd;
     }
 
     .descPrj {
@@ -47,14 +42,22 @@
 
         p{
             font-weight: normal;
-            font-family: Gaegu, Indie Flower;
+            font-family: Indie Flower, Montserrat;
+            font-size: 3vw;
         }
     }
 
     .outils {
         margin-top: 3vw;
-        font-family: Indie Flower, Montserrat;
+        // font-family: Indie Flower, Montserrat;
         font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        p{
+            margin: 1.5vw 0;
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -65,8 +68,24 @@
         //     width: 25vw;
         // }
         .titrePrj {
-            p {
-                font-size: 2vh;
+            font-size: 3.2vw;
+        }
+
+        a{
+            font-size: 3vw;
+        }
+
+        .descPrj{
+            font-size: 3vw;
+            p{
+                font-size: 2.8vw;
+            }
+        }
+
+        .outils{
+            p{
+                font-size: 2.5vw;
+                margin: 1vw 0;
             }
         }
     }
@@ -75,9 +94,28 @@
 // Grand Ecran 
 @media (min-width: 1200px) {
     .Projet {
+        // img{
+        //     width: 25vw;
+        // }
         .titrePrj {
-            p {
-                font-size: 2.5vh;
+            font-size: 2.5vw;
+        }
+
+        a{
+            font-size: 2vw;
+        }
+
+        .descPrj{
+            font-size: 2.2vw;
+            p{
+                font-size: 2vw;
+            }
+        }
+
+        .outils{
+            p{
+                font-size: 1.8vw;
+                margin: 0.5vw 0;
             }
         }
     }

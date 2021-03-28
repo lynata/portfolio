@@ -6,7 +6,6 @@ export default function Projet(props) {
             <img src={`imgPrj/${props.img}.png`} alt="image du projet"/>
             <div className="titrePrj" >
                 <h3>{props.titre}</h3>
-                <p>Rôle : {props.role}</p>
             </div>
             <a href={props.lien} target="_blank">Lien vers le projet</a>
             <div className="descPrj">
@@ -15,7 +14,8 @@ export default function Projet(props) {
                 <p>{props.autre}</p>
             </div>
             <div className="outils">
-                {props.outils}
+                <p>Rôle : {props.role}</p>
+                <p>{props.outils}</p>
             </div>
         </div>
     )

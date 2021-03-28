@@ -12,6 +12,7 @@ export default function Intro() {
             <div className="avatar">
                 <h3>Lyna Tang</h3>
                 <img id="imgLyna" src={imgLyna} alt="Lyna"/>
+                <img id="imgIntro" src={intro} alt="Lyna"/>
             </div>
             <div className="magic">
                 <img src={intro} alt=""/>
@@ -19,7 +20,7 @@ export default function Intro() {
             <div className="desc">
                 <ul>
                     <li><img className="fleur" src={point} alt=""/> Developpeuse front-end</li>
-                    <li><img className="fleur" src={point2} alt=""/> Designeuse</li>
+                    <li><img className="fleur" src={point2} alt=""/> Conceptrice</li>
                     <li><img className="fleur" src={point} alt=""/> Illustratrice</li>
                 </ul>
             </div>

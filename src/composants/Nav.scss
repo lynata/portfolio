@@ -176,7 +176,7 @@
 // }
 
 .Nav {
-    background-color: #daceff;
+    background-color: #ccbbff;
     // color: white;
     color: #FF9B9B;
     height: 9vw;
@@ -322,6 +322,7 @@
                         text-decoration: none;
                         color: white;
                         // color: #FF9B9B;
+                        font-size: 3vw;
                     }
 
                     a:hover, a:active{
@@ -366,4 +367,18 @@
             
     //     }
     // }
+    .Nav {
+        .menuLarge{
+            ul{
+                
+                li{
+                    a{
+                        font-size: 1.8vw;
+                    }
+                }
+
+            }
+            
+        }
+    }
 }

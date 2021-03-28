@@ -9,6 +9,9 @@
             width: 6vw;
             margin-right: 2vw;
         }
+        h3{
+            font-size: 4vw;
+        }
     }
     .feuilles{
         margin: 0;
@@ -46,10 +49,6 @@
         // height: 30vh;
         // display: flex;
         // height: 40vh;
-        animation-name: iconsAnim;
-        animation-iteration-count: infinite;
-        animation-duration: 5s;
-        animation-timing-function: ease-in-out;
 
 
         img{
@@ -61,8 +60,13 @@
             bottom: auto;
             position: absolute;
             // border: 1px solid red;
-
-            
+            animation-name: iconsAnim;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+        }
+        .ig:hover{
+            width: 6vw;
         }
         .id{
             right: 29vw;
@@ -70,9 +74,15 @@
             position: absolute;
             // width: 35vw;
             margin-top: 13vw;
+            animation-name: iconsAnim2;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+        }
+        .id:hover{
+            width: 6vw;
         }
     }
-    
 
     .merci {
         display: flex;
@@ -110,21 +120,55 @@
 
     @keyframes iconsAnim {
         0%{
-            transform: translateY(-10px);
+            // transform: translateY(-10px);
             // transform: scale(1);
-            transform: rotate(2deg);
+            transform: rotate(15deg);
         }
         50%{
-            transform: translateY(0);
-            // transform: scale(0.9,0.9);
-            transform: rotate(-2deg);
+            // transform: translateY(0);
+            // transform: scale(0.5);
+            transform: rotate(-15deg);
         }
         100%{
-            transform: translateY(-10px);
+            // transform: translateY(-10px);
             // transform: scale(1);
-            transform: rotate(2deg);
+            transform: rotate(15deg);
         }
     }
+    @keyframes iconsAnim2 {
+        0%{
+            // transform: translateY(10px);
+            // transform: scale(1);
+            transform: rotate(-15deg);
+        }
+        50%{
+            // transform: translateY(0);
+            // transform: scale(0.5);
+            transform: rotate(15deg);
+        }
+        100%{
+            // transform: translateY(10px);
+            // transform: scale(1);
+            transform: rotate(-15deg);
+        }
+    }
+    // @keyframes grandAnim {
+    //     0%{
+    //         // transform: translateY(10px);
+    //         transform: scale(1);
+    //         transform: rotate(-15deg);
+    //     }
+    //     50%{
+    //         // transform: translateY(0);
+    //         transform: scale(0.5);
+    //         transform: rotate(15deg);
+    //     }
+    //     100%{
+    //         // transform: translateY(10px);
+    //         transform: scale(1);
+    //         transform: rotate(-15deg);
+    //     }
+    // }
 }
 
 // Tablette 
@@ -144,7 +188,7 @@
         height: 100vh;
         .titre {
             h3{
-                font-size: 2.5vw;
+                font-size: 3vw;
             }
         }
     }
