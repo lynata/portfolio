@@ -1,5 +1,5 @@
 import './Intro.scss';
-import imgLyna from '../images/me.jpg';
+import imgLyna from '../images/lyn.png';
 import point from '../images/point.png';
 import point2 from '../images/point2.png';
 import feuilleD from '../images/feuilleD.png';
