@@ -155,21 +155,25 @@
 
             #imgLyna {
                 width: 20vw;
-                z-index: 2
+                z-index: 2;
+                // transition: translate 3s;
+                animation-name: transIntroOut;
+                animation-duration: 1s;
             }
 
             #imgLyna:hover{
                 animation-name: transLyna;
-                animation-duration: 3s;
+                animation-duration: 2s;
                 animation-timing-function: ease-in-out;
-                animation-fill-mode: forwards;
+                animation-fill-mode: both;
             }
     
             #imgLyna:hover ~ #imgIntro{
                 animation-name: transIntro;
-                animation-duration: 3s;
+                animation-duration: 2s;
                 animation-timing-function: ease-in-out;
-                animation-fill-mode: forwards;
+                animation-fill-mode: both;
+                // transition-duration: 3s;
             }
     
             #imgIntro {
@@ -178,6 +182,8 @@
                 margin-top: 3vw;
                 width: 19vw;
                 margin-left: 0.3vw;
+                animation-name: transLynaOut;
+                animation-duration: 1s;
             }
     
             @keyframes transLyna {
@@ -188,6 +194,15 @@
                     transform: translateX(-9vw);
                 }
             }
+
+            @keyframes transLynaOut {
+                0% {
+                    transform: translateX(9vw);
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }
     
             @keyframes transIntro {
                 0% {
@@ -195,6 +210,15 @@
                 }
                 100% {
                     transform: translateX(9vw);
+                }
+            }
+
+            @keyframes transIntroOut {
+                0% {
+                    transform: translateX(-9vw);
+                }
+                100% {
+                    transform: translateX(0);
                 }
             }
 
